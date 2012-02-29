@@ -3,6 +3,15 @@
 		
 		public function init() {
 		
+            $this->addElementPrefixPath('My_Decorator', '../My/Decorator', 'decorator');
+            $this->addDisplayGroupPrefixPath('My_Decorator', '../My/Decorator');
+            
+            $this->setDecorators(array(
+                'FormElements',
+                array('HtmlTag', array('tag' => 'table','id' => 'id-form')),
+                'Form',
+            ));
+
 			$this->setName("Cadastro Faturamento");
 
 			$fabrica = new Zend_Form_Element_Text('fabrica');

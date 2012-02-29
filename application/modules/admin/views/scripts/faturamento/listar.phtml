@@ -39,9 +39,8 @@
                         <table border="0" width="100%" cellpadding="0" cellspacing="0" id="product-table">
                             <tr>
                                 <th class="table-header-repeat line-left minwidth-1"><a href="">ID</a>	</th>
-                                <th class="table-header-repeat line-left minwidth-1"><a href="">Código</a></th>
-                                <th class="table-header-repeat line-left"><a href="">Descrição</a></th>
-                                <th class="table-header-repeat line-left"><a href="">Ativo</a></th>
+                                <th class="table-header-repeat line-left minwidth-1"><a href="">Fábrica</a></th>
+                                <th class="table-header-repeat line-left"><a href="">Posto</a></th>
                                 <th class="table-header-options line-left"><a href="">Ação</a></th>
                             </tr>
 
@@ -52,9 +51,8 @@
                                 ?>
                                 <tr class='<?php echo $class;?>'>
                                     <td><?php echo $data['faturamento']; ?></td>
-                                    <td><?php echo $data['codigo']; ?></td>
-                                    <td><?php echo $data['descricao']; ?></td>
-                                    <td><?php echo $data['ativo']; ?></td>
+                                    <td><?php echo $data['fabrica']; ?></td>
+                                    <td><?php echo $data['posto_nome']; ?></td>
                                     <td class="options-width " style="text-align: center">
                                         <a href="/admin/faturamento/id/<?php echo $data['faturamento']; ?>" title="Editar Registro" class="icon-1 info-tooltip"></a>
                                         <a href="javascript: void(0);" onclick='apagar("/admin/faturamento/delete/id/<?php echo $data['faturamento']; ?>");' title="Apagar Registro" class="icon-2 info-tooltip"></a>

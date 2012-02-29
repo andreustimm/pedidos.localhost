@@ -46,9 +46,8 @@
 
                             <?php
                             foreach ($this->data as $data) {
-                                $data['ativo'] = !$data['ativo'] ? "Ativo" : "Inativo";
-                               if(@$class == null) { $class = 'alternate-row';} else {$class = null;}
-                                ?>
+                               $data['ativo'] = !$data['ativo'] ? "Ativo" : "Inativo";
+                               if (@$class == null) { $class = 'alternate-row';} else {$class = null;} ?>
                                 <tr class='<?php echo $class;?>'>
                                     <td><?php echo $data['faturamento']; ?></td>
                                     <td><?php echo $data['fabrica']; ?></td>
